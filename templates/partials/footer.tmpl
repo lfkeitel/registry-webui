@@ -1,0 +1,20 @@
+{{define "footer"}}
+    </div>
+    <footer>
+        <div class="copyright">
+            {{.main.config.Core.SiteFooterText}}
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="/public/js/jLib.js"></script>
+    <script type="text/javascript" src="/public/js/api.js"></script>
+    <script type="text/javascript" src="/public/js/common.js"></script>
+    <script type="text/javascript" src="/public/js/modal.js"></script>
+    {{range .js}}
+    {{if ne . ""}}
+    <script type="text/javascript" src="/public/js/{{.}}.js"></script>
+    {{end}}
+    {{end}}
+    </body>
+</html>
+{{end}}

@@ -1,0 +1,5 @@
+{{define "home"}}
+{{template "header" dict "css" (list "home") "main" . "pageTitle" "Dashboard"}}
+{{$}}
+{{template "footer" dict "main" $ "js" (list "home")}}
+{{end}}
